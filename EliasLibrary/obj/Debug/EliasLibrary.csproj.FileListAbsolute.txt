@@ -1,0 +1,6 @@
+C:\Users\elias\source\repos\EliasLibrary\EliasLibrary\bin\Debug\EliasLibrary.dll
+C:\Users\elias\source\repos\EliasLibrary\EliasLibrary\bin\Debug\EliasLibrary.pdb
+C:\Users\elias\source\repos\EliasLibrary\EliasLibrary\obj\Debug\EliasLibrary.csprojResolveAssemblyReference.cache
+C:\Users\elias\source\repos\EliasLibrary\EliasLibrary\obj\Debug\EliasLibrary.csproj.CoreCompileInputs.cache
+C:\Users\elias\source\repos\EliasLibrary\EliasLibrary\obj\Debug\EliasLibrary.dll
+C:\Users\elias\source\repos\EliasLibrary\EliasLibrary\obj\Debug\EliasLibrary.pdb
