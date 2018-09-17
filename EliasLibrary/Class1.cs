@@ -9,15 +9,29 @@ namespace EliasLibrary
     /// </summary>
     public class User
     {
+        /// <summary>
+        /// Namnet på användaren.
+        /// </summary>
         public string name;
-        public int score;
 
-        public User(string name, int score)
-        {
-            this.name = name;
-            this.score = score;
-        }
+        /// <summary>
+        /// Användarens poäng. Score = 0 by default.
+        /// </summary>
+        public int score = 0;
 
+        /// <summary>
+        /// <para>En funktion som skapar en instans av klassen "User".</para>
+        /// <para>Funktionen tar emot användarens namn som en parameter.</para>
+        /// </summary>
+        /// <param name="name"></param>
+        public User(string name) { this.name = name; }
+
+        /// <summary>
+        /// <para>En funktion för att lägga till användare i en lista.</para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="userList"></param>
+        /// <returns></returns>
         public static List<User> CreateUser(List<User> userList)
         {
             User[] userArray = userList.ToArray();
@@ -65,7 +79,7 @@ namespace EliasLibrary
                         ConsoleKey ans = Task.AreYouSure("använda detta namn");
                         if (ans == ConsoleKey.Enter)
                         {
-                            userList.Add(new User(name, 0));
+                            userList.Add(new User(name));
                             return userList;
                         }
                         else if (ans == ConsoleKey.Spacebar)
@@ -77,16 +91,20 @@ namespace EliasLibrary
         }
     }
 
+    /// <summary>
+    /// En klass med funktioner som förklarar hur användaren ska agera i programmet.
+    /// </summary>
     public class Task
     {
-        ///<summary>
-        ///<para>Tryck 'ENTER' för att ____... (meningen som skrivs)</para>
-        ///<para>Byt ut "____" mot något/några ord som förklarar vad användaren ska göra.</para>
-        ///<para>En radavbrytning görs innan meningen skrivs ut. Konsollen rensas i slutet.</para>
-        ///</summary>
-        public static void PressEnter(string word)
+        /// <summary>
+        /// <para>Tryck 'ENTER' för att ____... (meningen som skrivs)</para>
+        /// <para>Byt ut "____" mot något/några ord som förklarar vad användaren ska göra.</para>
+        /// <para>En radavbrytning görs innan meningen skrivs ut. Konsollen rensas i slutet.</para>
+        /// </summary>
+        /// <param name="msg"></param>
+        public static void PressEnter(string msg)
         {
-            Console.WriteLine($"\nTryck 'ENTER' för att {word}...");
+            Console.WriteLine($"\nTryck 'ENTER' för att {msg}...");
             while (true)
             {
                 if (Console.ReadKey(true).Key == ConsoleKey.Enter)
@@ -100,9 +118,11 @@ namespace EliasLibrary
         /// <para>Byt ut "____" mot några ord som förklarar vad användaren ska bekräfta eller neka.</para>
         /// <para>Konsollen rensas i slutet.</para>
         /// </summary>
-        public static ConsoleKey AreYouSure(string word)
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public static ConsoleKey AreYouSure(string msg)
         {
-            Console.WriteLine($"Är du säker på att du vill {word}?");
+            Console.WriteLine($"Är du säker på att du vill {msg}?");
             Console.WriteLine("[ENTER] = JA | [SPACE] = NEJ\n");
             while (true)
             {
