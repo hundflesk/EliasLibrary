@@ -74,7 +74,7 @@ namespace EliasLibrary
                         if (char.IsLower(name[0]))
                             name = char.ToUpper(name[0]) + name.Substring(1);
 
-                        Console.WriteLine("Namnet går att använda!\n");
+                        Console.WriteLine("Namnet går att använda!");
 
                         ConsoleKey ans = Task.AreYouSure("använda detta namn");
                         if (ans == ConsoleKey.Enter)
@@ -116,13 +116,13 @@ namespace EliasLibrary
         /// <summary>
         /// <para>Är du säker på att du vill ____? (meningen som skrivs)</para>
         /// <para>Byt ut "____" mot några ord som förklarar vad användaren ska bekräfta eller neka.</para>
-        /// <para>Konsollen rensas i slutet.</para>
+        /// <para>En radavbrytning görs i början. Konsollen rensas i slutet.</para>
         /// </summary>
         /// <param name="msg"></param>
         /// <returns></returns>
         public static ConsoleKey AreYouSure(string msg)
         {
-            Console.WriteLine($"Är du säker på att du vill {msg}?");
+            Console.WriteLine($"\nÄr du säker på att du vill {msg}?");
             Console.WriteLine("[ENTER] = JA | [SPACE] = NEJ\n");
             while (true)
             {
