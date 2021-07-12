@@ -76,7 +76,7 @@ namespace EliasLibrary
 
                         Console.WriteLine("Namnet går att använda!");
 
-                        ConsoleKey ans = Task.AreYouSure("använda detta namn");
+                        ConsoleKey ans = MiniTask.AreYouSure("använda detta namn");
                         if (ans == ConsoleKey.Enter)
                         {
                             userList.Add(new User(name));
@@ -86,7 +86,7 @@ namespace EliasLibrary
                             Console.WriteLine("Registreringen avbröts.");
                     }
                 }
-                Task.PressEnter("välja ett annat namn");
+                MiniTask.PressEnter("välja ett annat namn");
             }
         }
     }
@@ -94,7 +94,7 @@ namespace EliasLibrary
     /// <summary>
     /// En klass med funktioner som förklarar hur användaren ska agera i programmet.
     /// </summary>
-    public class Task
+    public class MiniTask
     {
         /// <summary>
         /// <para>Tryck 'ENTER' för att ____... (meningen som skrivs)</para>

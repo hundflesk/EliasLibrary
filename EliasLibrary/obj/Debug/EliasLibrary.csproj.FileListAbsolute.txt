@@ -11,3 +11,10 @@ C:\Users\Elias Persson\source\repos\EliasLibrary\EliasLibrary\bin\Debug\EliasLib
 C:\Users\Elias Persson\source\repos\EliasLibrary\EliasLibrary\bin\Debug\EliasLibrary.dll
 C:\Users\Elias Persson\source\repos\EliasLibrary\EliasLibrary\bin\Debug\EliasLibrary.pdb
 C:\Users\Elias Persson\source\repos\EliasLibrary\EliasLibrary\obj\Debug\EliasLibrary.csprojAssemblyReference.cache
+D:\!Visual Studio Projekt\GitHub Repo\EliasLibrary\EliasLibrary\bin\Debug\EliasLibrary.xml
+D:\!Visual Studio Projekt\GitHub Repo\EliasLibrary\EliasLibrary\bin\Debug\EliasLibrary.dll
+D:\!Visual Studio Projekt\GitHub Repo\EliasLibrary\EliasLibrary\bin\Debug\EliasLibrary.pdb
+D:\!Visual Studio Projekt\GitHub Repo\EliasLibrary\EliasLibrary\obj\Debug\EliasLibrary.csproj.AssemblyReference.cache
+D:\!Visual Studio Projekt\GitHub Repo\EliasLibrary\EliasLibrary\obj\Debug\EliasLibrary.csproj.CoreCompileInputs.cache
+D:\!Visual Studio Projekt\GitHub Repo\EliasLibrary\EliasLibrary\obj\Debug\EliasLibrary.dll
+D:\!Visual Studio Projekt\GitHub Repo\EliasLibrary\EliasLibrary\obj\Debug\EliasLibrary.pdb

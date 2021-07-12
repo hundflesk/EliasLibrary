@@ -34,12 +34,12 @@
             <param name="userList"></param>
             <returns></returns>
         </member>
-        <member name="T:EliasLibrary.Task">
+        <member name="T:EliasLibrary.MiniTask">
             <summary>
             En klass med funktioner som förklarar hur användaren ska agera i programmet.
             </summary>
         </member>
-        <member name="M:EliasLibrary.Task.PressEnter(System.String)">
+        <member name="M:EliasLibrary.MiniTask.PressEnter(System.String)">
             <summary>
             <para>Tryck 'ENTER' för att ____... (meningen som skrivs)</para>
             <para>Byt ut "____" mot något/några ord som förklarar vad användaren ska göra.</para>
@@ -47,14 +47,14 @@
             </summary>
             <param name="msg"></param>
         </member>
-        <member name="M:EliasLibrary.Task.AreYouSure(System.String)">
+        <member name="M:EliasLibrary.MiniTask.AreYouSure(System.String)">
             <summary>
             <para>Är du säker på att du vill ____? (meningen som skrivs)</para>
             <para>Byt ut "____" mot några ord som förklarar vad användaren ska bekräfta eller neka.</para>
             <para>En radavbrytning görs i början. Konsollen rensas i slutet.</para>
             </summary>
             <param name="msg"></param>
-            <returns>ConsoleKey.Enter om JA, ConsoleKey.Spacebar om NEJ</returns>
+            <returns></returns>
         </member>
     </members>
 </doc>
