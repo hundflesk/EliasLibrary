@@ -76,13 +76,13 @@ namespace EliasLibrary
 
                         Console.WriteLine("Namnet går att använda!");
 
-                        ConsoleKey ans = MiniTask.AreYouSure("använda detta namn");
-                        if (ans == ConsoleKey.Enter)
+                        bool ans = MiniTask.AreYouSure("använda detta namn");
+                        if (ans == true)
                         {
                             userList.Add(new User(name));
                             return userList;
                         }
-                        else if (ans == ConsoleKey.Spacebar)
+                        else if (ans == false)
                             Console.WriteLine("Registreringen avbröts.");
                     }
                 }
@@ -120,18 +120,18 @@ namespace EliasLibrary
         /// </summary>
         /// <param name="msg"></param>
         /// <returns></returns>
-        public static ConsoleKey AreYouSure(string msg)
+        public static bool AreYouSure(string msg)
         {
             Console.WriteLine($"\nÄr du säker på att du vill {msg}?");
             Console.WriteLine("[ENTER] = JA | [SPACE] = NEJ\n");
+
             while (true)
             {
                 ConsoleKey key = Console.ReadKey(true).Key;
-                if (key == ConsoleKey.Enter || key == ConsoleKey.Spacebar)
-                {
-                    Console.Clear();
-                    return key;
-                }
+                if (key == ConsoleKey.Enter)
+                    return true;
+                else if (key == ConsoleKey.Spacebar)
+                    return false;
             }
         }
     }
